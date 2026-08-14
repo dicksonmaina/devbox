@@ -18,6 +18,7 @@
 | **termagent** | `C:\Users\user\termagent` | Python | ✅ Functional | ✅ Full | https://github.com/dicksonmaina/termagent |
 | **ecc** | `C:\Users\user\skills\ecc` | Node.js/TS | ✅ Mature | 🟡 Partial | https://github.com/affaan-m/ECC |
 | **claude-business** | `C:\Users\user\skills\claude-business` | Node.js | ✅ Library | 🟡 Partial | Pending setup |
+| **deploy-pipeline** | `C:\Users\user\deploy-pipeline` | Bash/Caddy | ✅ Live | ✅ Full | https://github.com/dicksonmaina/deploy-pipeline |
 
 ---
 
@@ -32,6 +33,16 @@
 - ✅ `.github/workflows/ci.yml` — CI/CD on every push
 - ✅ `MANAGEMENT.md` — project constitution
 - ✅ Committed and pushed to GitHub
+
+### New: Deploy Pipeline
+- ✅ Self-hosted static hosting with Caddy
+- ✅ Preview/production deploy system
+- ✅ Plugin ecosystem (minify, notify)
+- ✅ Cloudflare Worker edge function template
+- ✅ Zero-cost, zero-billing infrastructure
+- ✅ https://github.com/dicksonmaina/deploy-pipeline
+- ✅ WSL Ubuntu bridge (`C:\Tools\wsl-bridge\deploy.bat`)
+- ✅ Setup script for WSL automation
 
 ### Security Fixes:
 - **whatsapp-bridge:** `.env` with real secrets was untracked — now gitignored
