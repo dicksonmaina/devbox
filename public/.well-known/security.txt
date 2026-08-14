@@ -1,0 +1,3 @@
+Contact: https://github.com/dicksonmaina/devbox
+Expires: 2027-08-13T00:00:00.000Z
+Preferred-Languages: en
