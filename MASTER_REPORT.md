@@ -43,6 +43,9 @@
 - ✅ https://github.com/dicksonmaina/deploy-pipeline
 - ✅ WSL Ubuntu bridge (`C:\Tools\wsl-bridge\deploy.bat`)
 - ✅ Setup script for WSL automation
+- ✅ Caddy running on WSL port 80
+- ✅ Webhook listener running on WSL port 5050
+- ✅ 7 repos mapped for auto-deploy
 
 ### Security Fixes:
 - **whatsapp-bridge:** `.env` with real secrets was untracked — now gitignored
