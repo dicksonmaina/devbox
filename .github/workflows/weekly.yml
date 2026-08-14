@@ -1,0 +1,28 @@
+name: Weekly Management
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+jobs:
+  manage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      
+      - run: npm install
+      
+      - name: Run analysis
+        run: npm run analyze
+      
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: management-report
+          path: reports/latest.json
+          retention-days: 30

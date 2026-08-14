@@ -1,0 +1,44 @@
+name: Dependency Updates
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      
+      - run: npm install
+      
+      - run: npm outdated || true
+      
+      - name: Create update issue if needed
+        run: |
+          if npm outdated | grep -q 'Package'; then
+            echo "outdated=true" >> $GITHUB_ENV
+          fi
+        continue-on-error: true
+      
+      - name: Create issue for outdated dependencies
+        if: env.outdated == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'chore: update outdated dependencies',
+              body: 'Run `npm outdated` and update dependencies.\n\nThis issue was created automatically by the management agent.',
+              labels: ['dependencies', 'automated']
+            })
