@@ -29,7 +29,6 @@ export function registerAllTools() {
     { id: 'diff', name: 'Text Diff', description: 'Compare two texts side by side', icon: 'git-compare', category: 'text', tags: ['diff', 'compare', 'text'], featured: true },
     { id: 'password', name: 'Password Generator', description: 'Generate secure passwords', icon: 'lock', category: 'generators', tags: ['password', 'security', 'generate'], featured: true },
     { id: 'hash', name: 'Hash Generator', description: 'Generate MD5, SHA-1, SHA-256 hashes', icon: 'shield-check', category: 'generators', tags: ['hash', 'md5', 'sha', 'crypto'] },
-    { id: 'html-entity', name: 'HTML Entity Encoder', description: 'Encode and decode HTML entities', icon: 'code', category: 'encoding', tags: ['html', 'entity', 'encode', 'decode', 'xss'], featured: false },
     { id: 'text-statistics', name: 'Text Statistics', description: 'Count words, characters, sentences, and readability', icon: 'bar-chart', category: 'text', tags: ['text', 'statistics', 'word count', 'readability'], featured: false },
   ]
 
