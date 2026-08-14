@@ -1,0 +1,375 @@
+{
+  "timestamp": "2026-08-14T07:18:30.813Z",
+  "currentTools": 13,
+  "trendingTopics": 0,
+  "recommendations": [
+    {
+      "id": "yaml",
+      "name": "YAML Converter",
+      "description": "Convert between YAML and JSON formats",
+      "category": "data",
+      "tags": [
+        "yaml",
+        "json",
+        "convert",
+        "format"
+      ],
+      "icon": "file-text",
+      "featured": true,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 95,
+      "seoValue": [
+        "yaml to json",
+        "json to yaml",
+        "yaml converter online"
+      ],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [
+          "JSON.parse",
+          "TextDecoder"
+        ],
+        "template": "converter"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "3 hours",
+      "score": 103,
+      "trendingMatch": false
+    },
+    {
+      "id": "sql-formatter",
+      "name": "SQL Formatter",
+      "description": "Format and beautify SQL queries",
+      "category": "data",
+      "tags": [
+        "sql",
+        "format",
+        "query",
+        "database"
+      ],
+      "icon": "database",
+      "featured": true,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "high",
+      "priority": 94,
+      "seoValue": [
+        "sql formatter",
+        "sql beautifier",
+        "format sql"
+      ],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "formatter"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "1 day",
+      "score": 102,
+      "trendingMatch": false
+    },
+    {
+      "id": "csv",
+      "name": "CSV ↔ JSON",
+      "description": "Convert CSV data to JSON and vice versa",
+      "category": "data",
+      "tags": [
+        "csv",
+        "json",
+        "convert",
+        "spreadsheet"
+      ],
+      "icon": "table",
+      "featured": true,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 92,
+      "seoValue": [
+        "csv to json",
+        "json to csv",
+        "csv converter"
+      ],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [
+          "JSON.parse",
+          "String.split"
+        ],
+        "template": "converter"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "3 hours",
+      "score": 100,
+      "trendingMatch": false
+    },
+    {
+      "id": "qrcode",
+      "name": "QR Code Generator",
+      "description": "Generate QR codes from text or URLs",
+      "category": "generators",
+      "tags": [
+        "qr",
+        "code",
+        "generator",
+        "image"
+      ],
+      "icon": "qr-code",
+      "featured": true,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 93,
+      "seoValue": [
+        "qr code generator",
+        "generate qr code",
+        "qr generator"
+      ],
+      "implementation": {
+        "libraries": [
+          "qrcode"
+        ],
+        "browserAPIs": [
+          "Canvas"
+        ],
+        "template": "generator"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "3 hours",
+      "score": 98,
+      "trendingMatch": false
+    },
+    {
+      "id": "cron",
+      "name": "Cron Generator",
+      "description": "Generate and explain cron expressions visually",
+      "category": "generators",
+      "tags": [
+        "cron",
+        "schedule",
+        "generator",
+        "devops"
+      ],
+      "icon": "calendar",
+      "featured": true,
+      "inputs": 0,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 90,
+      "seoValue": [
+        "cron generator",
+        "cron expression",
+        "cron schedule"
+      ],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "generator"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "3 hours",
+      "score": 98,
+      "trendingMatch": false
+    },
+    {
+      "id": "css-gradient",
+      "name": "CSS Gradient Generator",
+      "description": "Create and preview CSS gradients",
+      "category": "design",
+      "tags": [
+        "css",
+        "gradient",
+        "design",
+        "color"
+      ],
+      "icon": "palette",
+      "featured": true,
+      "inputs": 0,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 88,
+      "seoValue": [
+        "css gradient",
+        "gradient generator",
+        "css gradient generator"
+      ],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "generator"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "3 hours",
+      "score": 96,
+      "trendingMatch": false
+    },
+    {
+      "id": "markdown-preview",
+      "name": "Markdown Preview",
+      "description": "Write Markdown and preview it live",
+      "category": "text",
+      "tags": [
+        "markdown",
+        "preview",
+        "html",
+        "editor"
+      ],
+      "icon": "file-text",
+      "featured": false,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 80,
+      "seoValue": [
+        "markdown preview",
+        "markdown editor",
+        "markdown to html"
+      ],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "preview"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "3 hours",
+      "score": 83,
+      "trendingMatch": false
+    },
+    {
+      "id": "lorem",
+      "name": "Lorem Ipsum Generator",
+      "description": "Generate placeholder text for designs",
+      "category": "generators",
+      "tags": [
+        "lorem",
+        "ipsum",
+        "placeholder",
+        "text"
+      ],
+      "icon": "type",
+      "featured": false,
+      "inputs": 0,
+      "outputs": 1,
+      "complexity": "low",
+      "priority": 75,
+      "seoValue": [
+        "lorem ipsum",
+        "placeholder text",
+        "lorem ipsum generator"
+      ],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "generator"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "1 hour",
+      "score": 83,
+      "trendingMatch": false
+    },
+    {
+      "id": "jsonpath",
+      "name": "JSONPath Tester",
+      "description": "Query JSON data with JSONPath expressions",
+      "category": "data",
+      "tags": [
+        "jsonpath",
+        "json",
+        "query",
+        "xpath"
+      ],
+      "icon": "search",
+      "featured": false,
+      "inputs": 2,
+      "outputs": 1,
+      "complexity": "high",
+      "priority": 78,
+      "seoValue": [
+        "jsonpath",
+        "jsonpath tester",
+        "json query"
+      ],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "tester"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "1 day",
+      "score": 81,
+      "trendingMatch": false
+    },
+    {
+      "id": "url-builder",
+      "name": "URL Builder",
+      "description": "Build URLs with query parameters visually",
+      "category": "encoding",
+      "tags": [
+        "url",
+        "builder",
+        "query",
+        "params"
+      ],
+      "icon": "link",
+      "featured": false,
+      "inputs": 0,
+      "outputs": 1,
+      "complexity": "low",
+      "priority": 72,
+      "seoValue": [
+        "url builder",
+        "url constructor",
+        "build url"
+      ],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [
+          "URL",
+          "URLSearchParams"
+        ],
+        "template": "generator"
+      },
+      "gapReason": "not_implemented",
+      "estimatedEffort": "1 hour",
+      "score": 80,
+      "trendingMatch": false
+    }
+  ],
+  "nextTool": {
+    "id": "yaml",
+    "name": "YAML Converter",
+    "description": "Convert between YAML and JSON formats",
+    "category": "data",
+    "tags": [
+      "yaml",
+      "json",
+      "convert",
+      "format"
+    ],
+    "icon": "file-text",
+    "featured": true,
+    "inputs": 1,
+    "outputs": 1,
+    "complexity": "medium",
+    "priority": 95,
+    "seoValue": [
+      "yaml to json",
+      "json to yaml",
+      "yaml converter online"
+    ],
+    "implementation": {
+      "libraries": [],
+      "browserAPIs": [
+        "JSON.parse",
+        "TextDecoder"
+      ],
+      "template": "converter"
+    },
+    "gapReason": "not_implemented",
+    "estimatedEffort": "3 hours",
+    "score": 103,
+    "trendingMatch": false
+  }
+}

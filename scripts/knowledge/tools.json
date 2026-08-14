@@ -1,0 +1,270 @@
+{
+  "tools": [
+    {
+      "id": "yaml",
+      "name": "YAML Converter",
+      "description": "Convert between YAML and JSON formats",
+      "category": "data",
+      "tags": ["yaml", "json", "convert", "format"],
+      "icon": "file-text",
+      "featured": true,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 95,
+      "seoValue": ["yaml to json", "json to yaml", "yaml converter online"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": ["JSON.parse", "TextDecoder"],
+        "template": "converter"
+      }
+    },
+    {
+      "id": "csv",
+      "name": "CSV ↔ JSON",
+      "description": "Convert CSV data to JSON and vice versa",
+      "category": "data",
+      "tags": ["csv", "json", "convert", "spreadsheet"],
+      "icon": "table",
+      "featured": true,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 92,
+      "seoValue": ["csv to json", "json to csv", "csv converter"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": ["JSON.parse", "String.split"],
+        "template": "converter"
+      }
+    },
+    {
+      "id": "cron",
+      "name": "Cron Generator",
+      "description": "Generate and explain cron expressions visually",
+      "category": "generators",
+      "tags": ["cron", "schedule", "generator", "devops"],
+      "icon": "calendar",
+      "featured": true,
+      "inputs": 0,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 90,
+      "seoValue": ["cron generator", "cron expression", "cron schedule"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "generator"
+      }
+    },
+    {
+      "id": "html-entity",
+      "name": "HTML Entity Encoder",
+      "description": "Encode and decode HTML entities",
+      "category": "encoding",
+      "tags": ["html", "entity", "encode", "decode", "xss"],
+      "icon": "code",
+      "featured": false,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "low",
+      "priority": 85,
+      "seoValue": ["html entity encoder", "html entity decoder", "html entities"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": ["DOMParser", "TextDecoder"],
+        "template": "converter"
+      }
+    },
+    {
+      "id": "sql-formatter",
+      "name": "SQL Formatter",
+      "description": "Format and beautify SQL queries",
+      "category": "data",
+      "tags": ["sql", "format", "query", "database"],
+      "icon": "database",
+      "featured": true,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "high",
+      "priority": 94,
+      "seoValue": ["sql formatter", "sql beautifier", "format sql"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "formatter"
+      }
+    },
+    {
+      "id": "lorem",
+      "name": "Lorem Ipsum Generator",
+      "description": "Generate placeholder text for designs",
+      "category": "generators",
+      "tags": ["lorem", "ipsum", "placeholder", "text"],
+      "icon": "type",
+      "featured": false,
+      "inputs": 0,
+      "outputs": 1,
+      "complexity": "low",
+      "priority": 75,
+      "seoValue": ["lorem ipsum", "placeholder text", "lorem ipsum generator"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "generator"
+      }
+    },
+    {
+      "id": "qrcode",
+      "name": "QR Code Generator",
+      "description": "Generate QR codes from text or URLs",
+      "category": "generators",
+      "tags": ["qr", "code", "generator", "image"],
+      "icon": "qr-code",
+      "featured": true,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 93,
+      "seoValue": ["qr code generator", "generate qr code", "qr generator"],
+      "implementation": {
+        "libraries": ["qrcode"],
+        "browserAPIs": ["Canvas"],
+        "template": "generator"
+      }
+    },
+    {
+      "id": "markdown-preview",
+      "name": "Markdown Preview",
+      "description": "Write Markdown and preview it live",
+      "category": "text",
+      "tags": ["markdown", "preview", "html", "editor"],
+      "icon": "file-text",
+      "featured": false,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 80,
+      "seoValue": ["markdown preview", "markdown editor", "markdown to html"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "preview"
+      }
+    },
+    {
+      "id": "css-gradient",
+      "name": "CSS Gradient Generator",
+      "description": "Create and preview CSS gradients",
+      "category": "design",
+      "tags": ["css", "gradient", "design", "color"],
+      "icon": "palette",
+      "featured": true,
+      "inputs": 0,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 88,
+      "seoValue": ["css gradient", "gradient generator", "css gradient generator"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "generator"
+      }
+    },
+    {
+      "id": "jwt-encoder",
+      "name": "JWT Encoder",
+      "description": "Encode data into JWT tokens",
+      "category": "auth",
+      "tags": ["jwt", "token", "encode", "auth"],
+      "icon": "key",
+      "featured": false,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "medium",
+      "priority": 70,
+      "seoValue": ["jwt encoder", "jwt generator", "create jwt"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": ["crypto.subtle"],
+        "template": "converter"
+      }
+    },
+    {
+      "id": "jsonpath",
+      "name": "JSONPath Tester",
+      "description": "Query JSON data with JSONPath expressions",
+      "category": "data",
+      "tags": ["jsonpath", "json", "query", "xpath"],
+      "icon": "search",
+      "featured": false,
+      "inputs": 2,
+      "outputs": 1,
+      "complexity": "high",
+      "priority": 78,
+      "seoValue": ["jsonpath", "jsonpath tester", "json query"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "tester"
+      }
+    },
+    {
+      "id": "url-builder",
+      "name": "URL Builder",
+      "description": "Build URLs with query parameters visually",
+      "category": "encoding",
+      "tags": ["url", "builder", "query", "params"],
+      "icon": "link",
+      "featured": false,
+      "inputs": 0,
+      "outputs": 1,
+      "complexity": "low",
+      "priority": 72,
+      "seoValue": ["url builder", "url constructor", "build url"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": ["URL", "URLSearchParams"],
+        "template": "generator"
+      }
+    },
+    {
+      "id": "text-statistics",
+      "name": "Text Statistics",
+      "description": "Count words, characters, sentences, and readability",
+      "category": "text",
+      "tags": ["text", "statistics", "word count", "readability"],
+      "icon": "bar-chart",
+      "featured": false,
+      "inputs": 1,
+      "outputs": 1,
+      "complexity": "low",
+      "priority": 82,
+      "seoValue": ["word counter", "character counter", "text statistics"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": [],
+        "template": "analyzer"
+      }
+    },
+    {
+      "id": "uuid-v7",
+      "name": "UUID v7 Generator",
+      "description": "Generate time-ordered UUID v7 identifiers",
+      "category": "generators",
+      "tags": ["uuid", "v7", "generate", "id"],
+      "icon": "fingerprint",
+      "featured": false,
+      "inputs": 0,
+      "outputs": 1,
+      "complexity": "low",
+      "priority": 65,
+      "seoValue": ["uuid v7", "uuid7", "time ordered uuid"],
+      "implementation": {
+        "libraries": [],
+        "browserAPIs": ["crypto.getRandomValues"],
+        "template": "generator"
+      }
+    }
+  ]
+}

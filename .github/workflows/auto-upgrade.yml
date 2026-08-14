@@ -1,0 +1,46 @@
+name: Autonomous Pipeline
+
+on:
+  schedule:
+    - cron: '0 0 * * 1,4'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Max tools to implement'
+        required: false
+        default: '1'
+
+jobs:
+  auto-upgrade:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      
+      - run: npm install
+      
+      - name: Discover tools
+        run: node scripts/discover.cjs
+      
+      - name: Generate strategy
+        run: node scripts/strategy.cjs
+      
+      - name: Run autonomous pipeline
+        run: node scripts/pipeline.cjs --auto --limit ${{ github.event.inputs.limit || '1' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+      
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: devbox-reports
+          path: reports/
+          retention-days: 30

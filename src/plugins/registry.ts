@@ -11,6 +11,8 @@ const ColorTool = lazy(() => import('./ColorTool').then(m => ({ default: m.Color
 const DiffTool = lazy(() => import('./DiffTool').then(m => ({ default: m.DiffTool })))
 const PasswordTool = lazy(() => import('./PasswordTool').then(m => ({ default: m.PasswordTool })))
 const HashTool = lazy(() => import('./HashTool').then(m => ({ default: m.HashTool })))
+const HtmlEntityTool = lazy(() => import('./HtmlEntityTool').then(m => ({ default: m.HtmlEntityTool })))
+const TextStatisticsTool = lazy(() => import('./TextStatisticsTool').then(m => ({ default: m.TextStatisticsTool })))
 
 import { registerTool, type ToolPlugin } from '../plugins'
 
@@ -27,6 +29,8 @@ export function registerAllTools() {
     { id: 'diff', name: 'Text Diff', description: 'Compare two texts side by side', icon: 'git-compare', category: 'text', tags: ['diff', 'compare', 'text'], featured: true },
     { id: 'password', name: 'Password Generator', description: 'Generate secure passwords', icon: 'lock', category: 'generators', tags: ['password', 'security', 'generate'], featured: true },
     { id: 'hash', name: 'Hash Generator', description: 'Generate MD5, SHA-1, SHA-256 hashes', icon: 'shield-check', category: 'generators', tags: ['hash', 'md5', 'sha', 'crypto'] },
+    { id: 'html-entity', name: 'HTML Entity Encoder', description: 'Encode and decode HTML entities', icon: 'code', category: 'encoding', tags: ['html', 'entity', 'encode', 'decode', 'xss'], featured: false },
+    { id: 'text-statistics', name: 'Text Statistics', description: 'Count words, characters, sentences, and readability', icon: 'bar-chart', category: 'text', tags: ['text', 'statistics', 'word count', 'readability'], featured: false },
   ]
 
   const components: Record<string, React.LazyExoticComponent<React.ComponentType<unknown>>> = {
@@ -41,6 +45,8 @@ export function registerAllTools() {
     diff: DiffTool,
     password: PasswordTool,
     hash: HashTool,
+    'html-entity': HtmlEntityTool,
+    'text-statistics': TextStatisticsTool,
   }
 
   for (const tool of tools) {
