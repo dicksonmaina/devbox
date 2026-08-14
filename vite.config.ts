@@ -37,5 +37,5 @@ export default defineConfig({
   ],
   base: '/devbox/',
   server: { port: 5173, open: true },
-  build: { sourcemap: false, rollupOptions: { output: { manualChunks: undefined } } },
+  build: { sourcemap: true, rollupOptions: { output: { manualChunks: undefined } } },
 })
