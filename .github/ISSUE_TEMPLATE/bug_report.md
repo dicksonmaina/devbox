@@ -1,30 +1,15 @@
----
-name: Bug Report
-about: Report a bug or issue
-title: '[BUG] '
-labels: bug
-assignees: ''
----
+# Bug Report
 
-## What happened?
+## Description
+A clear description of the bug.
 
-Describe the bug.
+## Steps to Reproduce
+1. 
+2. 
+3. 
 
-## Steps to reproduce
+## Expected Behavior
+What should happen.
 
-1. Go to '...'
-2. Click on '...'
-3. See error
-
-## Expected behavior
-
-What should have happened.
-
-## Screenshots
-
-If applicable, add screenshots.
-
-## Browser/Environment
-
-- OS: [e.g. Windows, macOS, Linux]
-- Browser: [e.g. Chrome, Firefox, Safari]
+## Actual Behavior
+What actually happens.
